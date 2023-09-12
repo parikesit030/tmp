@@ -1,0 +1,10 @@
+{
+  "operationName": "refreshToken",
+  "variables": {
+    "input": {
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZGU3OGZkZjA0OGZlNTBkYjBmNTBmOSIsInVzZXJuYW1lIjoicGFyaWtlc2l0MDMwIiwiZW1haWwiOiJwYXJpa2VzaXQwMzBAZ21haWwuY29tIiwiYWRtaW4iOmZhbHNlLCJpYXQiOjE2OTQ1MzM1MTIsImV4cCI6MTY5NDUzNzExMn0.g2Rp7mcBlunVgIqinDHwA0ijWP4yt1EW1dEEM_v5yrI",
+      "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZGU3OGZkZjA0OGZlNTBkYjBmNTBmOSIsInVzZXJuYW1lIjoicGFyaWtlc2l0MDMwIiwiZW1haWwiOiJwYXJpa2VzaXQwMzBAZ21haWwuY29tIiwiYWRtaW4iOmZhbHNlLCJpYXQiOjE2OTQ1MzM1MTIsImV4cCI6MTY5NzEyNTUxMn0.mOuZJve-pgw7mOuaP60JT9M7Gwr9gZffD95fuhYX0sU"
+    }
+  },
+  "query": "mutation refreshToken($input: TokenInput) {\n  refreshToken(input: $input) {\n    token\n    refresh_token\n    __typename\n  }\n}\n"
+}
